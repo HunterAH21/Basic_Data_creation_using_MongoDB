@@ -1,0 +1,59 @@
+Library management:
+
+db.books.insertMany([
+    { title: "Pride and Prejudice", author: "Jane Austen", available: true },
+    { title: "The Catcher in the Rye", author: "J.D. Salinger", available: false },
+    { title: "Brave New World", author: "Aldous Huxley", available: true },
+    { title: "The Lord of the Rings", author: "J.R.R. Tolkien", available: false },
+    { title: "Crime and Punishment", author: "Fyodor Dostoevsky", available: true },
+    { title: "The Hobbit", author: "J.R.R. Tolkien", available: true },
+    { title: "The Odyssey", author: "Homer", available: false },
+    { title: "War and Peace", author: "Leo Tolstoy", available: true },
+    { title: "Anna Karenina", author: "Leo Tolstoy", available: false },
+    { title: "The Brothers Karamazov", author: "Fyodor Dostoevsky", available: true }
+]);
+
+Student Management:
+
+db.students.insertMany([
+    { name: "Arun Kumar", age: 16, grade: "10th", enrolled: true },
+    { name: "Priya Subramanian", age: 15, grade: "9th", enrolled: true },
+    { name: "Karthik Rajan", age: 17, grade: "11th", enrolled: false },
+    { name: "Lakshmi Narayanan", age: 14, grade: "8th", enrolled: true },
+    { name: "Suresh Babu", age: 18, grade: "12th", enrolled: true },
+    { name: "Meenakshi Sundaram", age: 13, grade: "7th", enrolled: true },
+    { name: "Ravi Shankar", age: 16, grade: "10th", enrolled: false },
+    { name: "Vidhya Ramachandran", age: 15, grade: "9th", enrolled: true },
+    { name: "Sathya Moorthy", age: 17, grade: "11th", enrolled: true },
+    { name: "Anitha Balasubramanian", age: 14, grade: "8th", enrolled: false }
+]);
+
+
+Event Management:
+
+db.events.insertMany([
+    { eventName: "Annual Gala", date: new Date("2024-09-10"), location: "Grand Ballroom", organizer: "ABC Corp" },
+    { eventName: "Tech Conference 2024", date: new Date("2024-09-15"), location: "Convention Center", organizer: "Tech Innovators" }
+]);
+
+
+db.foodMenu.insertMany([
+    { eventName: "Annual Gala", item: "Paneer Tikka", category: "Starter", price: 250 },
+    { eventName: "Annual Gala", item: "Biryani", category: "Main Course", price: 500 },
+    { eventName: "Annual Gala", item: "Gulab Jamun", category: "Dessert", price: 150 },
+    { eventName: "Tech Conference 2024", item: "Veg Sandwich", category: "Starter", price: 100 },
+    { eventName: "Tech Conference 2024", item: "Pasta", category: "Main Course", price: 300 }
+]);
+db.vipArrivals.insertMany([
+    { eventName: "Annual Gala", vipName: "Mr. Ravi Shankar" },
+    { eventName: "Tech Conference 2024", vipName: "Ms. Priya Menon"}
+]);
+
+
+db.eventSchedule.insertMany([
+    { eventName: "Annual Gala", activityName: "Opening Ceremony"},
+    { eventName: "Annual Gala", activityName: "Dinner"},
+    { eventName: "Tech Conference 2024", activityName: "Keynote Speech"},
+    { eventName: "Tech Conference 2024", activityName: "Panel Discussion"}
+]);
+
